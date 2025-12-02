@@ -1,1 +1,26 @@
-
+{
+  "name": "airbnb-clone1",
+  "version": "1.0.0",
+  "description": "This project is a simplified Airbnb-style accommodation listing web application built as part of the ProDev Frontend Engineering Program.\r The goal is to demonstrate mastery of modern frontend development tools, scalable design patterns, and real-world application architecture.",
+  "homepage": "https://github.com/TinyBila/airbnb-clone1#readme",
+  "bugs": {
+    "url": "https://github.com/TinyBila/airbnb-clone1/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TinyBila/airbnb-clone1.git"
+  },
+  "license": "ISC",
+  "author": "Tiny Bila",
+  "type": "commonjs",
+  "main": "postcss.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
