@@ -1,7 +1,7 @@
 {
-  "name": "airbnb-clone1",
+  "name": "clear",
   "version": "1.0.0",
-  "description": "This project is a simplified Airbnb-style accommodation listing web application built as part of the ProDev Frontend Engineering Program.\r The goal is to demonstrate mastery of modern frontend development tools, scalable design patterns, and real-world application architecture.",
+  "description": "Airbnb-style accommodation listing web application",
   "homepage": "https://github.com/TinyBila/airbnb-clone1#readme",
   "bugs": {
     "url": "https://github.com/TinyBila/airbnb-clone1/issues"
@@ -11,22 +11,30 @@
     "url": "git+https://github.com/TinyBila/airbnb-clone1.git"
   },
   "license": "ISC",
-  "author": "Tiny Bila",
+  "author": "",
   "type": "commonjs",
-  "main": "postcss.config.js",
+  "main": "next.confi.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "lucide-react": "^0.408.0",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.7",
+    "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.22",
     "nodemon": "^3.1.11",
     "postcss": "^8.5.6",
-    "tailwindcss": "^4.1.17",
+    "tailwindcss": "^3.4.7",
     "typescript": "^5.9.3"
   }
 }
