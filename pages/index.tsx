@@ -4,11 +4,13 @@ import SearchBar from '../components/SearchBar';
 import ListingCard from '../components/ListingCard';
 import Filters from '../components/Filters';
 import { useEffect, useState } from 'react';
+import { properties } from '../data/properties';
 
 
 export default function Home() {
 const [listings, setListings] = useState<any[]>([]);
 const [query, setQuery] = useState('');
+const [filters, setFilters] = useState({ beds: undefined, maxPrice: undefined });
 
 
 async function fetchListings(q = '') {
@@ -21,6 +23,13 @@ setListings(data);
 
 
 useEffect(() => { fetchListings(); }, []);
+
+
+const filtered = properties.filter((p) => {
+if (filters.beds && (p.details?.bedrooms ?? 0) < filters.beds) return false;
+if (filters.maxPrice && p.price > filters.maxPrice) return false;
+return true;
+});
 
 
 return (
@@ -41,9 +50,15 @@ fetch(`/api/listings?${qs.toString()}`).then(r => r.json()).then(setListings);
 
 
 <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
-{listings.map(l => (
-<ListingCard key={l.id} listing={l} />
-))}
+{filtered.length > 0 ? (
+filtered.map((property) => (
+<ListingCard key={property.id} listing={property} />
+))
+) : (
+<p className="col-span-full text-center text-gray-500">
+No properties match your filters.
+</p>
+)}
 </section>
 
 

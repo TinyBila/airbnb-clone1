@@ -18,7 +18,7 @@ export interface Property {
   };
 }
 
-export const properties: Property[] = [
+export const properties = [
   {
     id: '1',
     title: 'Modern Downtown Apartment',
@@ -32,7 +32,7 @@ export const properties: Property[] = [
       bedrooms: 2,
       bathrooms: 2,
       description: 'Experience luxury living in this stunning modern apartment located in the heart of downtown. This beautifully designed space features floor-to-ceiling windows with breathtaking city views, high-end appliances, and contemporary furnishings. Perfect for both short and extended stays.',
-      amenities: ['Free WiFi', 'Kitchen', 'Washing machine', 'Air conditioning', 'Heating', 'Parking', 'TV', 'Coffee maker'],
+      amenities: ['Free WiFi', 'Kitchen', 'Washing machine', 'Air conditioning'],
       reviews: 127,
       bathroomImage: 'https://images.unsplash.com/photo-1638799869566-b17fa794c4de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBiYXRocm9vbXxlbnwxfHx8fDE3NjQ0NDI4NTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
       livingRoomImage: 'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3p5JTIwbGl2aW5nJTIwcm9vbXxlbnwxfHx8fDE3NjQ0MTI1NjF8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
