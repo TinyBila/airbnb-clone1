@@ -14,6 +14,7 @@
   "author": "",
   "type": "commonjs",
   "main": "next.confi.js",
+  
   "scripts": {
     "dev": "next dev",
     "build": "next build",

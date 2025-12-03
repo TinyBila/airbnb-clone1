@@ -16,6 +16,7 @@ export function PropertyDetail({ propertyId, onBack }: PropertyDetailProps) {
         <p>Property not found</p>
       </div>
     );
+    
   }
 
   return (
