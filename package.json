@@ -3,24 +3,11 @@
   "version": "1.0.0",
   "description": "Airbnb-style accommodation listing web application",
   "homepage": "https://github.com/TinyBila/airbnb-clone1#readme",
-  "bugs": {
-    "url": "https://github.com/TinyBila/airbnb-clone1/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TinyBila/airbnb-clone1.git"
-  },
+  "bugs": { "url": "https://github.com/TinyBila/airbnb-clone1/issues" },
+  "repository": { "type": "git", "url": "git+https://github.com/TinyBila/airbnb-clone1.git" },
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
-  "main": "next.confi.js",
-  
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  "scripts": { "dev": "next dev", "build": "next build", "start": "next start", "lint": "next lint" },
   "dependencies": {
     "express": "^5.2.1",
     "lucide-react": "^0.408.0",
