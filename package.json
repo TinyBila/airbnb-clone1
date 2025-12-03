@@ -1,5 +1,5 @@
 {
-  "name": "clear",
+  "name": "airbnb-clone1",
   "version": "1.0.0",
   "description": "Airbnb-style accommodation listing web application",
   "homepage": "https://github.com/TinyBila/airbnb-clone1#readme",
@@ -32,7 +32,6 @@
     "@types/react": "^19.2.7",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.22",
-    "nodemon": "^3.1.11",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.7",
     "typescript": "^5.9.3"
